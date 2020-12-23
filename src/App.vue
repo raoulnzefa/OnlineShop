@@ -8,7 +8,7 @@
         <Categories></Categories>
       </div>
       <div class="col-md-9">
-        <h2>Products</h2>
+        <Products></Products>
       </div>
     </div>
   </div>
@@ -17,12 +17,13 @@
 <script>
   import Categories from './components/Categories.vue'
   import Title from "./components/Title.vue"
+  import Products from './components/Products.vue'
 
   export default{
-  components: { Categories, Title },
+  components: { Categories, Title, Products },
     data : function(){
       return{
-        name : "Mert"
+        
       }
     }
   }
