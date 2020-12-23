@@ -1,12 +1,19 @@
 <template>
-    <div class="list-group-item">
-        <h2>{{product.name}}</h2>
-        <strong>{{product.price}}</strong>
+  <div class="card text-white bg-primary mb-3" style="width: 16rem">
+    <img style="width: 100%" class="card-img-top" src="../img/macbook.png">
+    <div class="card-body">
+      <p class="card-title">{{ product.name }}</p>
+      <p class="card-text">
+        <strong>
+            Price: {{ product.price }}€
+        </strong>
+      </p>
     </div>
+  </div>
 </template>
 
 <script>
-export default{
-    props : ["product"]
-}
+export default {
+  props: ["product"],
+};
 </script>
