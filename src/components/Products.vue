@@ -1,11 +1,14 @@
 <template>
   <div>
-    <h2>{{productTitle}}</h2>
-    <Product 
-      v-for="product in products"
-      :key="product.id"
-      :product="product"
-    ></Product>
+    <h2>{{ productTitle }}</h2>
+    <div class="card-group">
+      <Product
+        class="card-columns"
+        v-for="product in products"
+        :key="product.id"
+        :product="product"
+      ></Product>
+    </div>
   </div>
 </template>
 
@@ -16,7 +19,7 @@ export default {
   components: { Product },
   data: () => {
     return {
-      productTitle : "Products",  
+      productTitle: "Products",
       products: [
         { id: 1, name: "Macbook Pro 16", price: 15000 },
         { id: 2, name: "Macbook Air 2020", price: 5000 },
