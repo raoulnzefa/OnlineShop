@@ -8,7 +8,9 @@
             Price: {{ product.price }}€
         </strong>
       </p>
+      
     </div>
+    <button class="btn btn-success">Buy</button>
   </div>
 </template>
 
