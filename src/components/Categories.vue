@@ -1,8 +1,9 @@
 <template>
-    <div class="container">
-        <h2>Categories</h2>
+    <div class="col-md-3">
+        <h2>All Categories</h2>
         <ul class="list-group">
             <li 
+                @click="selectedCategory"
                 class="list-group-item" 
                 v-for="category in categories" 
                 :key="category">
@@ -16,8 +17,15 @@
 export default {
     data : () => {
         return{
-            categories : ["Araba", "Ev", "Televizyon","Beyaz Eşya"]
+            categories : ["TV", "Phone", "Laptop"],
+            selectedCategoryName : ""
+        }
+    },
+    methods : {
+        selectedCategory(e){
+            console.log();
         }
     }
+
 }
 </script>

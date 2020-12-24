@@ -2,16 +2,10 @@
   <div class="container">
       <Title></Title>
     <div class="row mt-2">
-      <div class="col-md-3">
         <Categories></Categories>
-      </div>
-      <div class="col-md-9">
         <Products></Products>
-      </div>
     </div>
-    <div class="row">
       <FooterBar></FooterBar>
-    </div>
   </div>
 </template>
 
@@ -30,4 +24,3 @@
     }
   }
 </script>
-
