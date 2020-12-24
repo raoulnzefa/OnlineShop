@@ -1,5 +1,7 @@
 # New Shopping Market Clone
 
+<br>
+<br>
 <p>
     <img src="./src/img/gittigidiyor.png"/>
 </p>
