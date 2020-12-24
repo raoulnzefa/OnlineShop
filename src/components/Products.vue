@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>{{ productTitle }}</h2>
-    <div class="card-group">
+    <div class="card-deck">
       <Product
         class="card-columns"
         v-for="product in products"
