@@ -1,5 +1,5 @@
 <template>
-    <div class="row col-xs-12 center">
+    <div class="row mt-4 center">
         <hr>
         <footer>
             <p>Tüm hakları saklıdır | Gittigidiyor Clone</p>
