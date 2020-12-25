@@ -1,6 +1,6 @@
 <template>
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row mb-4">
+        <div class="col-md-3 mt-1">
             <h1>{{title}}</h1>
         </div>
         <div class="col-md-6">

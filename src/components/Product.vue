@@ -8,8 +8,7 @@
         <strong>
             Price: {{ product.price }} <i class="fas fa-dollar-sign"></i>
         </strong>
-      </p>
-      
+      </p>  
     </div>
     <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Buy</button>
   </div>

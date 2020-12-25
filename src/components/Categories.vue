@@ -7,7 +7,7 @@
                 class="list-group-item" 
                 v-for="category in categories" 
                 :key="category">
-                {{category}}
+                <a href="#">{{category}}</a>
             </li>
         </ul>
     </div>
@@ -29,3 +29,13 @@ export default {
 
 }
 </script>
+
+<style>
+    a{
+        color: grey;
+        font-size: 1.5rem;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+</style>
