@@ -1,6 +1,21 @@
 <template>
     <div class="mt-3 ml-5">
         <!-- <img src="../img/anonymous.png"/> -->
-        <h3><i class="fas fa-user-circle"></i> My Account</h3>
+        <h3><a href="#"><i class="fas fa-user-circle"></i> My Account</a></h3>
     </div>
 </template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style>
+    a{
+        color:black;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+</style>

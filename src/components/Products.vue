@@ -13,6 +13,7 @@
 
 <script>
 import Product from "./Product.vue";
+import { eventBus } from "../main";
 
 export default {
   components: { Product },
@@ -29,5 +30,10 @@ export default {
       ],
     };
   },
+  created(){
+    eventBus.$on("searchBarInput" , (data) => {
+      this.productTitle = data + "s";
+    })
+  }
 };
 </script>

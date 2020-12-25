@@ -30,7 +30,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    ul li:hover{
+        background-color: rgb(233, 233, 233);;
+    }
+
     a{
         color: grey;
         font-size: 1.5rem;

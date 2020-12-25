@@ -2,9 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const eventBus = new Vue({
-  
-})
+export const eventBus = new Vue();
 
 new Vue({
   el: '#app',
