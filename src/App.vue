@@ -16,11 +16,11 @@
   import FooterBar from "./components/FooterBar.vue"
 
   export default{
-  components: { Categories, Title, Products,FooterBar },
-    data : function(){
-      return{
-        
-      }
-    }
+    components: { 
+      Categories, 
+      Title, 
+      Products,
+      FooterBar 
+    },
   }
 </script>
