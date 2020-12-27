@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c8e20b4c-f225-4e24-94cf-b3bef0f1c5ef/deploy-status)](https://app.netlify.com/sites/awesome-dijkstra-f36b71/deploys)
-
 # New Shopping Market Clone
 
 <br>
