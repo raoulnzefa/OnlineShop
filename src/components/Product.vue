@@ -1,7 +1,10 @@
 <template>
 <div class="col-md-4 col-sm-6 mb-3">
   <div class="card text-white bg md-4">
-    <img class="card-img-top" src="../img/macbook.png">
+    <img class="card-img-top" 
+        :src="require(`../img/${productCategory}.png`)"
+        :alt="imgAlt">
+
     <div class="card-body">
       <p class="card-title">{{ product.name }}</p>
       <p class="card-text">
@@ -19,11 +22,16 @@
 <script>
 export default {
   props: ["product"],
+  data(){
+    return{
+      productCategory : this.product.category
+    }
+  }
 };
 </script>
 
 <style scoped>
   .bg{
-    background-color: rgba(128,128, 128, 0.3);
+    background-color: rgba(128,128, 128, 0.2);
   }
 </style>
