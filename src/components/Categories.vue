@@ -39,7 +39,7 @@ export default {
     }
 
     a{
-        color: rgb(201, 201, 201);
+        color: rgb(253, 253, 253);
         font-size: 1.5rem;
     }
     a:hover{
