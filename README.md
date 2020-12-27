@@ -3,7 +3,7 @@
 <br>
 <br>
 <p>
-    <img src="./src/img/gittigidiyor-clone.png"/>
+    <img src="./src/img/gittigidiyor-clone1.png"/>
 </p>
 
 ### vue-components

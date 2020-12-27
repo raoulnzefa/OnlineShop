@@ -7,7 +7,7 @@
         style="height: 230px"
         >
 
-    <div class="card-body">
+    <div class="card-body" v-if="isBuy">
       <p class="card-title">{{ product.name }}</p>
       <p class="card-text">
         <strong>
@@ -15,7 +15,25 @@
         </strong>
       </p>  
     </div>
-    <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Buy</button>
+    <button class="btn btn-warning" @click="changeBuy" v-if="isBuy"><i class="fas fa-shopping-cart"></i> Buy</button>
+    
+    <!-- ELSE -->
+    <div class="card-body" v-if="!isBuy">
+
+      <p class="card-text">
+        <strong>
+            Piece : {{productPiece}}
+        </strong>
+        <strong>
+            Total Price : {{ product.price * productPiece}}
+        </strong>
+      </p>  
+    </div>
+    <div class="btn-group" v-if="!isBuy">
+      <button class="btn btn-success" @click="pieceIncrement"><i class="fas fa-cancel"></i> + </button>
+      <button class="btn btn-danger" @click="changeBuy"><i class="fas fa-cancel"></i> Cancel</button>
+      <button class="btn btn-warning" @click="pieceDecrement"><i class="fas fa-cancel"></i> - </button>
+    </div>
   </div>
 </div>
   
@@ -26,7 +44,25 @@ export default {
   props: ["product"],
   data(){
     return{
-      productCategory : this.product.category
+      productCategory : this.product.category,
+      selectedProduct : this.product,
+      isBuy : true,
+      productPiece : 0,
+    }
+  },
+  methods : {
+    changeBuy(){
+      this.isBuy = !this.isBuy
+    },
+    pieceIncrement(){
+      this.productPiece += 1;
+    },
+    pieceDecrement(){
+      if(this.productPiece == 0){
+        this.productPiece = 0;
+      }else{
+        this.productPiece -= 1;
+      }
     }
   }
 };
