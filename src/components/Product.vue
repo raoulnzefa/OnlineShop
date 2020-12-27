@@ -3,7 +3,9 @@
   <div class="card text-white bg md-4">
     <img class="card-img-top" 
         :src="require(`../img/${productCategory}.png`)"
-        :alt="imgAlt">
+        :alt="productCategory"
+        style="height: 230px"
+        >
 
     <div class="card-body">
       <p class="card-title">{{ product.name }}</p>
