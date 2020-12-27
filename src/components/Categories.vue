@@ -31,12 +31,15 @@ export default {
 </script>
 
 <style scoped>
+    ul li{
+        background-color: rgba(128,128, 128, 0.0);
+    }
     ul li:hover{
-        background-color: rgb(233, 233, 233);;
+        background-color: rgba(233, 233, 233, 0.2);;
     }
 
     a{
-        color: grey;
+        color: rgb(201, 201, 201);
         font-size: 1.5rem;
     }
     a:hover{
