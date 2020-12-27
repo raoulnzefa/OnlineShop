@@ -1,12 +1,12 @@
 <template>
-    <div class="row mb-4">
-        <div class="col-md-3 mt-1">
+    <div class="row mb-4 navbar">
+        <div class="col-md-3 mt-1 nav-brand">
             <h1>{{title}}</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 nav-item">
             <SearchBar></SearchBar>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 nav-item">
             <AccountBar></AccountBar>
         </div>
     </div>
