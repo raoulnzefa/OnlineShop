@@ -1,6 +1,6 @@
 <template>
 <div class="col-md-4 col-sm-6 mb-3">
-  <div class="card text-white bg-dark md-4">
+  <div class="card text-white bg md-4">
     <img class="card-img-top" src="../img/macbook.png">
     <div class="card-body">
       <p class="card-title">{{ product.name }}</p>
@@ -21,3 +21,9 @@ export default {
   props: ["product"],
 };
 </script>
+
+<style scoped>
+  .bg{
+    background-color: rgba(128,128, 128, 0.3);
+  }
+</style>

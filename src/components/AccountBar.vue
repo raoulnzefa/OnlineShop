@@ -16,6 +16,7 @@ export default {
         color:black;
     }
     a:hover{
+        color : white;
         text-decoration: none;
     }
 </style>

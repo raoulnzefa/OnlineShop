@@ -5,6 +5,8 @@
         <Categories></Categories>
         <Products></Products>
     </div>
+      <br>
+      <br>  
       <FooterBar></FooterBar>
   </div>
 </template>
