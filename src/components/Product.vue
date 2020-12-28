@@ -30,9 +30,9 @@
       </p>  
     </div>
     <div class="btn-group" v-if="!isBuy">
-      <button class="btn btn-success" @click="pieceIncrement"><i class="fas fa-cancel"></i> + </button>
+      <button class="btn btn-success" @click="pieceIncrement"><i class="fas fa-cancel"></i><i class="fas fa-plus"></i></button>
       <button class="btn btn-danger" @click="changeBuy"><i class="fas fa-cancel"></i> Cancel</button>
-      <button class="btn btn-warning" @click="pieceDecrement"><i class="fas fa-cancel"></i> - </button>
+      <button class="btn btn-warning" @click="pieceDecrement"><i class="fas fa-cancel"></i> <i class="fas fa-minus"></i> </button>
     </div>
   </div>
 </div>
