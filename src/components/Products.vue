@@ -44,7 +44,7 @@ export default {
   },
   computed : {
     filtered(){
-      this.products.filter(element => {
+      return this.products.filter((element) => {
         return element.name.match(this.productTitle);
       })
     }
