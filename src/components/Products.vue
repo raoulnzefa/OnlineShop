@@ -1,6 +1,6 @@
 <template>
   <div class="col-md-9">
-    <h2>{{ productTitle }}</h2>
+    <h2>{{ defaultTitle }}</h2>
     <div class="row">
       <Product
         v-for="product in filtered"
@@ -19,7 +19,8 @@ export default {
   components: { Product },
   data: () => {
     return {
-      productTitle: "Products",
+      defaultTitle : "Products",
+      productTitle: "/*",
       products: [
         { id: 1, category: "TV", name: "LG 55", price: 7000 },
         { id: 2, category: "Laptop", name: "Macbook Air 2020", price: 7000 },
@@ -52,6 +53,7 @@ export default {
   created(){
     eventBus.$on("searchBarInput" , (data) => {
       this.productTitle = data;
+      this.defaultTitle = data;
     })
   }
 };
