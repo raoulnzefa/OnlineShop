@@ -3,7 +3,7 @@
     <h2>{{ productTitle }}</h2>
     <div class="row">
       <Product
-        v-for="product in products"
+        v-for="product in filtered"
         :key="product.id"
         :product="product"
       ></Product>
@@ -42,9 +42,16 @@ export default {
       ],
     };
   },
+  computed : {
+    filtered(){
+      this.products.filter(element => {
+        return element.name.match(this.productTitle);
+      })
+    }
+  },
   created(){
     eventBus.$on("searchBarInput" , (data) => {
-      this.productTitle = data + "s";
+      this.productTitle = data;
     })
   }
 };
