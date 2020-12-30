@@ -2,18 +2,25 @@
     <div class="col-md-3">
         <h2>All Categories</h2>
         <ul class="list-group">
-            <li 
+            <router-link to="/products" tag="li"
                 @click="selectedCategory"
                 class="list-group-item" 
                 v-for="category in categories" 
                 :key="category">
-                <a href="#">{{category}}</a>
-            </li>
+                <a>{{category}}</a>
+            </router-link>
+        </ul>
+        <hr>
+        <ul class="list-group">
+            <router-link tag="li" to="/addProduct" class="list-group-item">
+                Ürün Ekle
+            </router-link>
         </ul>
     </div>
 </template>
 
 <script>
+
 export default {
     data : () => {
         return{

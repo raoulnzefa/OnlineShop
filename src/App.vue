@@ -4,7 +4,9 @@
     <div class="row mt-2">
         <Categories></Categories>
         <!-- <Products></Products> -->
-        <router-view></router-view>
+        <router-view>
+          
+        </router-view>
     </div>
       <br>
       <br>  
