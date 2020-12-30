@@ -1,16 +1,17 @@
 <template>
     <div class="mt-3 ml-5 navbar">
-        <MyCart></MyCart>
-        <h4><a class="nav-item lg" href="#"><i class="fas fa-user-circle"></i>Account</a></h4>
+        <router-link tag="h4" to="/mycart">
+            <a><i class="fas fa-shopping-cart"></i></a>
+        </router-link>
+        <router-link tag="h4" to="/myaccount">
+            <a class="nav-item lg"><i class="fas fa-user-circle"></i>Account</a>
+        </router-link>
     </div>
 </template>
 
 <script>
-import MyCart from "./MyCart.vue"
 export default {
-    components : {
-        MyCart : MyCart
-    }
+    
 }
 </script>
 

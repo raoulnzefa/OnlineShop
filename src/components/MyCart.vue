@@ -1,9 +1,9 @@
 <template>
-        <h4><a href="#"><i class="fas fa-shopping-cart"></i></a></h4>
+  <div class="col-md-9">
+    <h4>My Cart</h4>
+  </div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
