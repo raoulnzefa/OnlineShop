@@ -5,5 +5,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      defaultCarts : []
+    }
+  },
+  created(){
+
+  }
+};
 </script>

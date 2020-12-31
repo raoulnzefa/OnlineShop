@@ -12,6 +12,7 @@ const router = new VueRouter({
 })
 
 Vue.use(VueResource);
+
 export const eventBus = new Vue();
 
 new Vue({
